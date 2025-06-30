@@ -46,7 +46,7 @@
             @extend .l-mv__bgimg;
             background-image: url(../images/top-image-1.jpg);
             background-position: left;
-
+            background-size: cover;
             @include responsive(sm){
                 // background-position-x: 100px;
             }
@@ -54,7 +54,8 @@
         &--2{
             @extend .l-mv__bgimg;
             background-image: url(../images/top-image-2.jpg);
-            background-position: right;
+            background-position: left;
+            background-size: cover;
             animation-delay: 6s;
             @include responsive(md){
                 background-position: 60%;
@@ -66,10 +67,11 @@
         &--3{
             @extend .l-mv__bgimg;
             background-image: url(../images/top-image-3.jpg);
-            background-position: right;
+            background-position: center 20%;
+            background-size: cover;
             animation-delay: 12s;
             @include responsive(md){
-                background-position: 50%;
+                background-position: right;
             }
             @include responsive(sm){
                 background-position: center;
@@ -803,16 +805,17 @@
         width: 312px;
         height: 240px;
         position: relative;
+        filter: grayscale(80%);
+        transition: all .3s;
         &:hover{
-            transition: .3s;
             scale: (1.01);
+            filter: grayscale(0%);
         }
         picture{
             filter: grayscale(0);
-        &:hover{
-            transition: .3s;
-            filter: grayscale(80%);
-        }
+            transition: all .3s;
+        // &:hover{
+        // }
     }
         @include responsive(md){
             width:30.95%;

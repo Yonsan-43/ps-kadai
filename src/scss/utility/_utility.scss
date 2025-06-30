@@ -82,3 +82,15 @@ margin-top: 80px;
         border-right: 2px solid $cWhite;
     }
 }
+
+.u-dotfilter{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(rgb(0 0 0 / 12%) 1.2px, transparent 1.2px);
+        background-size: 6px 6px;
+        opacity: 0.5;
+    }
+}
