@@ -382,6 +382,7 @@
     &__img{
         width: 620px;
         height: 440px;
+        overflow: hidden;
         @include responsive(md){
             align-items: center;
         }
@@ -699,6 +700,7 @@
         }
         &__img{
             width: 100%;
+            // height: 100%;
             object-fit: cover;
             @include responsive(sm){
                 // position: relative;
