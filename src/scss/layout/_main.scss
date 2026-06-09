@@ -199,6 +199,7 @@
         background-color: $cSecondry;
         color: $cWhite;
         padding-left: 40px;
+
         @include responsive--min(lg){
             left: 18%;
         }
@@ -220,7 +221,7 @@
             // width: 90%//値の小さい方を採用して適用
         }
         &__cover:hover{
-            transition: .3;
+            transition: .3s;
             scale: (1.01);
             opacity: .9;
         }
@@ -808,10 +809,13 @@
         height: 240px;
         position: relative;
         filter: grayscale(80%);
-        transition: all .3s;
-        &:hover{
+        transition-delay: 3s;
+        @media (any-hover: hover) {
+            &:hover{
+               transition: filter .3s ease-in-out, scale .3s ease-in-out;
             scale: (1.01);
             filter: grayscale(0%);
+           }
         }
         picture{
             filter: grayscale(0);
