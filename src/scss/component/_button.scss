@@ -17,6 +17,12 @@
                 background-color: color-mix(in srgb, $cPrimary, black 20%);
             }
         }
+        @media (any-hover: hover) {
+            span:hover{
+                transform: right 2px;
+
+            }
+        }
         @include responsive(sm){
             width: 256px;
             height: 44px;
@@ -75,3 +81,4 @@
         }
     }
 }
+
