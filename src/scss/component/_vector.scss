@@ -7,7 +7,7 @@
     transform: skew(45deg);
     width: 16px;
     height: 4.5px;
-    transform: right 2px;
+    transition: transform .3s ease-in-out;
     &--news{
         @extend .c-vector;
         transform: translateY(-50%) skew(45deg);
