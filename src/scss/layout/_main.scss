@@ -809,12 +809,18 @@
         height: 240px;
         position: relative;
         filter: grayscale(80%);
-        transition-delay: 3s;
+        &[data-aos][data-aos]{
+            transition-property:filter,scale;
+            transition-duration: .3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: .3s;
+        }
+        transition:filter .3s ease-in-out;
         @media (any-hover: hover) {
             &:hover{
                transition: filter .3s ease-in-out, scale .3s ease-in-out;
-            scale: (1.01);
-            filter: grayscale(0%);
+                scale: (1.01);
+                filter: grayscale(0%);
            }
         }
         picture{
