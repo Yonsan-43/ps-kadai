@@ -24,8 +24,10 @@
         position:absolute;
         bottom: 45%;
         right: 16px;
-        &:hover{
-            opacity: 1;
+        @media (any-hover: hover) {
+            &:hover{
+                opacity: 1;
+            }
         }
         @include responsive(sm){
         right: rclamp(20,250,330,768);

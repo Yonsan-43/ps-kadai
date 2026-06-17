@@ -14,7 +14,7 @@
             transition-property:background-color,scale ;
             transition-duration: .3s;
             transition-timing-function: ease-in-out;
-            transition-delay: .3s;
+            transition-delay: .2s;
         }
         @media (any-hover: hover) {
             &:hover{
@@ -51,6 +51,7 @@
         color: $cWhite;
         justify-content: center;
         box-shadow: 0px 2px 4px 0 rgba(25, 25, 25, 0.46);
+        transition-delay: .3s;
         @media (any-hover: hover) {
             &:hover .c-vector{
                 transform: translateX(4px) skew(45deg);

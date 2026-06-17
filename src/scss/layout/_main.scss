@@ -199,7 +199,23 @@
         background-color: $cSecondry;
         color: $cWhite;
         padding-left: 40px;
-
+        &[data-aos][data-aos]{
+            transition-property:background-color,scale,opacity;
+            transition-duration: .3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: .3s;
+        }
+        @media (any-hover: hover) {
+            &:hover{
+               transition: background-color .3s ease-in-out, scale .3s ease-in-out;
+                scale: (1.01);
+                background-color: color-mix(in srgb, $cSecondry, black 20%);
+           }
+           &:hover .c-vector--news{
+            transform: translate(2px, -2px) skew(45deg);
+            transition-delay: .3s;
+            }
+        }
         @include responsive--min(lg){
             left: 18%;
         }
@@ -822,6 +838,10 @@
                 scale: (1.01);
                 filter: grayscale(0%);
            }
+           &:hover .c-vector--recruit{
+            transform: translate(2px, -2px) skew(45deg);
+            transition-delay: .3s;
+        }
         }
         picture{
             filter: grayscale(0);
