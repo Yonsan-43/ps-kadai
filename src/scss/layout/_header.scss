@@ -93,10 +93,12 @@
     }
     &__navitem{
         text-align: center;
-        :hover{
-            transition: .3s;
-            scale: (1.05);
-            // color: $cAccent;
+        @media (any-hover: hover) {
+            &:hover{
+                transition: .3s;
+                scale: (1.05);
+                color: $cAccent;
+            }
         }
         &--burgar{
             text-align: center;
@@ -104,11 +106,14 @@
         }
     }
     &__navtxt{
-        //  :hover{
-        //     transition: .3s;
-        //     color: $cAccent;
-        //     // scale: (1.1);
-        // }
+        @media (any-hover: hover) {
+            &:hover{
+                    // transition: .3s;
+                    // color: $cAccent;
+                    // // scale: (1.1);
+
+            }
+        }
         &--burgar:hover{
             transition: .3s;
             color: $cText;
