@@ -44,8 +44,8 @@
         }
         &--1{
             @extend .l-mv__bgimg;
-            background-image: url(../images/top-image-1.jpg);
-            background-position: left;
+            background-image: url(../images/top-image-1.png);
+            background-position: center 95%, left;
             background-size: cover;
             @include responsive(sm){
                 // background-position-x: 100px;
@@ -67,9 +67,9 @@
         &--3{
             @extend .l-mv__bgimg;
             background-image: url(../images/top-image-3.jpg);
-            background-position: center 20%, right 20%;
+            background-position: center 30%, right 20%;
             background-size: cover;
-            animation-delay: 12s;
+            animation-delay: 12s;;
             @include responsive(md){
                 background-position: right;
             }
@@ -203,7 +203,7 @@
             transition-property:background-color,scale,opacity;
             transition-duration: .3s;
             transition-timing-function: ease-in-out;
-            transition-delay: .3s;
+            transition-delay: .1s;
         }
         @media (any-hover: hover) {
             &:hover{
