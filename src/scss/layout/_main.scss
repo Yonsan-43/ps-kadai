@@ -90,6 +90,7 @@
         position: absolute;
         top: 100px;
         left: 175px;
+        display: block;
         text-shadow: 4.2px 4.2px 4px rgba(24, 40, 72, 0.5);
         @include responsive--min(lg){
             left: 13%;
