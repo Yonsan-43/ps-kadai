@@ -74,7 +74,7 @@
                 background-position: right;
             }
             @include responsive(sm){
-                background-position: center;
+                background-position: center right 30%;
             }
         }
     }
@@ -85,26 +85,21 @@
         font-size: 96px;
         color: $cWhite;
         font-weight: 900;
-        line-height: 112px;
+        line-height: 90px;
         letter-spacing: 2.2px;
         position: absolute;
-        top: 100px;
+        top: 50px;
         left: 175px;
-        display: block;
         text-shadow: 4.2px 4.2px 4px rgba(24, 40, 72, 0.5);
+        span{
+            display: block;
+        }
         @include responsive--min(lg){
             left: 13%;
         }
         @include responsive(lg){
             font-size: rclamp(48,88,375,1100);
             left: 100px;
-        }
-        @include responsive(md){
-            top: 50px;
-            line-height: 90px;
-            span{
-                display: block;
-            }
         }
         @include responsive(sm){
             left: rclamp(20,100,375,768);
@@ -146,7 +141,7 @@
         &-1{
             @extend .l-mv__rectangle;
             width: 308px;
-            top: 50.14%;
+            top: 52.28%;
             @include responsive(md){
                 width: rclamp(189,308,375,1080);
                 top: 52.28%;
@@ -159,7 +154,7 @@
         &-2{
             @extend .l-mv__rectangle;
             width: 436px;
-            top: 425px;
+            top: 445px;
             @include responsive(md){
                 width:rclamp(269,436,375,1080);
                 top: 64%;
