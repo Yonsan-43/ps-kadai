@@ -93,6 +93,10 @@
     }
     &__navitem{
         text-align: center;
+        a:focus{
+            border: 2px solid $cPrimary;
+            border-radius: 4px;
+        }
         @media (any-hover: hover) {
             &:hover{
                 transition: .3s;
