@@ -93,7 +93,7 @@
     }
     &__navitem{
         text-align: center;
-        a:focus{
+        a:focus-visible{
             border: 2px solid $cPrimary;
             border-radius: 4px;
         }
