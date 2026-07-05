@@ -195,6 +195,7 @@
         background-color: $cSecondry;
         color: $cWhite;
         padding-left: 40px;
+   
         &[data-aos][data-aos]{
             transition-property:background-color,scale,opacity;
             transition-duration: .3s;
@@ -236,6 +237,10 @@
             transition: .3s;
             scale: (1.01);
             opacity: .9;
+        }
+        &__cover:focus-visible{
+            border: 2px solid $cAccent;
+            border-radius: 4px;
         }
         &__bg-be{
             @include responsive(sm){
@@ -821,13 +826,17 @@
         height: 240px;
         position: relative;
         filter: grayscale(0%);
+        transition:filter .3s ease-in-out;
         &[data-aos][data-aos]{
             transition-property:filter,scale;
             transition-duration: .3s;
             transition-timing-function: ease-in-out;
             transition-delay: .3s;
         }
-        transition:filter .3s ease-in-out;
+        a:focus-visible{
+            border: 2px solid $cAccent;
+            border-radius: 4px;
+        }
         @media (any-hover: hover) {
             &:hover{
                transition: filter .3s ease-in-out, scale .3s ease-in-out;

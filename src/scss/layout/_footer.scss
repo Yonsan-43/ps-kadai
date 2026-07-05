@@ -106,6 +106,10 @@
                 transition: .3s;
                 scale: (1.05);
             }
+            a:focus-visible{
+                border: 2px solid $cAccent;
+                border-radius: 4px;
+            }
             @include responsive(sm){
                 margin-right: 0;
                 margin-bottom: 21px;
@@ -132,6 +136,10 @@
             :hover{
                 transition: .3s;
                 scale: (1.05);
+            }
+            a:focus-visible{
+                border: 2px solid $cAccent;
+                border-radius: 4px;
             }
             @include responsive(sm){
                 margin-right: 0;

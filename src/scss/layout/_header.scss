@@ -94,7 +94,7 @@
     &__navitem{
         text-align: center;
         a:focus-visible{
-            border: 2px solid $cPrimary;
+            border: 2px solid $cAccent;
             border-radius: 4px;
         }
         @media (any-hover: hover) {
