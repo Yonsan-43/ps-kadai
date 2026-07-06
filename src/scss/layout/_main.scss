@@ -195,7 +195,10 @@
         background-color: $cSecondry;
         color: $cWhite;
         padding-left: 40px;
-   
+        &:focus-visible{
+            border: 2px solid $cAccent;
+            border-radius: 4px;
+        }
         &[data-aos][data-aos]{
             transition-property:background-color,scale,opacity;
             transition-duration: .3s;
@@ -237,10 +240,6 @@
             transition: .3s;
             scale: (1.01);
             opacity: .9;
-        }
-        &__cover:focus-visible{
-            border: 2px solid $cAccent;
-            border-radius: 4px;
         }
         &__bg-be{
             @include responsive(sm){
