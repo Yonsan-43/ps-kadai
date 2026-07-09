@@ -107,6 +107,11 @@
         &--burgar{
             text-align: center;
             margin-top: 38px;
+            margin-inline: 5%;
+            a:focus-visible{
+                border: 2px solid $cAccent;
+                border-radius: 4px;
+            }
         }
     }
     &__navtxt{
