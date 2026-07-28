@@ -72,9 +72,31 @@
     &__navlist{
         display: flex;
         align-items: center;
+        li a {
+            display: inline-block;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                width: 100%;
+                height: 1px;
+                background: $cWhite;
+                scale: 0;
+                transition: scale .5s ease;
+            }
+            @media (any-hover: hover) {
+                &:hover{
+                    cursor: pointer;
+                    &::after {
+                        scale: 1;
+                    }
+                }
+            }
+        }
         a, p {
             color: $cWhite;
-
         }
         &--burgar{
             margin-top: 135px;
