@@ -193,5 +193,11 @@
     position: fixed;
     top: 0px;
     z-index: 100;
+    li a {
+        &::after{
+            content: "";
+            background: $cText;
+        }
+    }
 }
 
