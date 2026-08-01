@@ -8,6 +8,7 @@
     width: 16px;
     height: 4.5px;
     transition: transform .3s ease-in-out;
+    transition-delay: .3s;
     &--news{
         @extend .c-vector;
         transform: translateY(-50%) skew(45deg);
