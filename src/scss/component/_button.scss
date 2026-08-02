@@ -57,17 +57,19 @@
         justify-content: center;
         box-shadow: 0px 2px 4px 0 rgba(25, 25, 25, 0.46);
         transition-delay: .3s;
-        &:focus-visible{
-            border: 2px solid $cPrimary  ;
-            border-radius: 4px;
-        }
         @media (any-hover: hover) {
             &:hover{
                 scale: 1.05;
             }
+        }
+        @media (any-hover: hover) {
             &:hover .c-vector{
                 transform: translateX(5px) skew(45deg);
             }
+        }
+        &:focus-visible{
+            border: 2px solid $cPrimary  ;
+            border-radius: 4px;
         }
         @include responsive(sm){
             width: 100%;
